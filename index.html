@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <title>Range calculator</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="range-inputs">
+        <div class="range-inputs__box range-inputs__box--margin">
+          <label class="range-inputs__label" for="storage-input"
+            >Storage: <span class="range-inputs__storage-value"></span
+          ></label>
+          <input
+            class="range-inputs__storage"
+            id="storage-input"
+            type="range"
+            min="0"
+            max="1000"
+            step="1"
+          />
+        </div>
+        <div class="range-inputs__box">
+          <label class="range-inputs__label" for="transfer-input"
+            >Transfer: <span class="range-inputs__transfer-value"></span
+          ></label>
+          <input
+            class="range-inputs__transfer"
+            type="range"
+            id="transfer-input"
+            min="0"
+            max="1000"
+            step="1"
+          />
+        </div>
+      </div>
+      <div class="chart-box">
+        <ul class="providers">
+          <li class="providers__item">
+            <span class="providers__text">backblaze</span>
+            <img
+              class="providers__logo"
+              src="./images/backblaze.png"
+              alt="backblaze logo"
+              width="15px"
+              height="15px"
+            />
+          </li>
+          <li class="providers__item">
+            <div class="radio-btns">
+              <span class="providers__text">bunny</span>
+              <div class="radio-btns__box">
+                <div class="radio-btns__input-box">
+                  <input
+                    class="radio-btns__input hdd"
+                    value="hdd"
+                    type="radio"
+                    name="bunny"
+                    id="bunny"
+                    checked
+                  /><label class="radio-btns__label" for="bunny">hdd</label>
+                </div>
+                <div class="radio-btns__input-box">
+                  <input
+                    class="radio-btns__input ssd"
+                    type="radio"
+                    name="bunny"
+                    id="ssd"
+                    value="ssd"
+                  /><label class="radio-btns__label" for="ssd">ssd</label>
+                </div>
+              </div>
+            </div>
+            <img
+              class="providers__logo"
+              src="./images/bunny.png"
+              alt="bunny logo"
+              width="15px"
+              height="15px"
+            />
+          </li>
+          <li class="providers__item">
+            <div class="radio-btns">
+              <span class="providers__text">scaleway</span>
+              <div class="radio-btns__box">
+                <div class="radio-btns__input-box">
+                  <input
+                    class="radio-btns__input multi"
+                    value="multi"
+                    type="radio"
+                    name="scaleway"
+                    id="multi"
+                    checked
+                  /><label class="radio-btns__label" for="multi">Multi</label>
+                </div>
+                <div class="radio-btns__input-box">
+                  <input
+                    class="radio-btns__input single"
+                    type="radio"
+                    name="scaleway"
+                    value="single"
+                    id="single"
+                  /><label class="radio-btns__label" for="single">Single</label>
+                </div>
+              </div>
+            </div>
+            <img
+              class="providers__logo"
+              src="./images/scaleway.png"
+              alt="scaleway logo"
+              width="15px"
+              height="15px"
+            />
+          </li>
+          <li class="providers__item">
+            <span class="providers__text">vultr</span>
+            <img
+              class="providers__logo"
+              src="./images/vultr.png"
+              alt="vultr logo"
+              width="15px"
+              height="15px"
+            />
+          </li>
+        </ul>
+
+        <ul class="chart-list">
+          <li class="chart-list__item">
+            <div class="chart-list__price">0</div>
+            <div class="chart-list__bar"></div>
+          </li>
+          <li class="chart-list__item">
+            <div class="chart-list__price">0</div>
+            <div class="chart-list__bar"></div>
+          </li>
+          <li class="chart-list__item">
+            <div class="chart-list__price">0</div>
+            <div class="chart-list__bar"></div>
+          </li>
+          <li class="chart-list__item">
+            <div class="chart-list__price">0</div>
+            <div class="chart-list__bar"></div>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <script type="module" src="./script.js"></script>
+  </body>
+</html>

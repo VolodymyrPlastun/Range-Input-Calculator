@@ -1,0 +1,141 @@
+ul,
+p {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+@media screen and (min-width: 320px) {
+  .container {
+    display: flex;
+    align-items: center;
+    flex-direction: column-reverse;
+    height: 60vh;
+    padding: 30px 15px;
+    border: 2px solid black;
+    border-radius: 10px;
+  }
+
+  .range-inputs {
+    width: 100%;
+  }
+
+  .range-inputs__box {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .chart-list {
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    border-bottom: 5px solid black;
+  }
+
+  .chart-list__item {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    height: 100%;
+    width: 40px;
+  }
+
+  .chart-list__price {
+    text-align: center;
+  }
+
+  .providers {
+    font-size: 14px;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .providers__item {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .radio-btns {
+    text-align: center;
+  }
+
+  .radio-btns__box {
+    display: flex;
+  }
+
+  .providers__text {
+    font-size: 14px;
+  }
+
+  .radio-btns__input-box {
+    display: flex;
+    align-items: center;
+  }
+
+  .radio-btns__label {
+    font-size: 10px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .range-inputs__box--margin {
+    margin-bottom: 20px;
+  }
+
+  .chart-box {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column-reverse;
+    margin-bottom: 20px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .container {
+    flex-direction: column;
+    justify-content: space-around;
+  }
+
+  .range-inputs {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 20px;
+  }
+
+  .chart-box {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .chart-list {
+    width: 320px;
+    height: 200px;
+    transform: rotate(0.25turn);
+    margin: 0;
+  }
+
+  .providers {
+    height: 300px;
+    flex-direction: column;
+  }
+
+  .providers__item {
+    flex-direction: row;
+  }
+
+  .providers__text {
+    font-size: 16px;
+  }
+
+  .radio-btns__label {
+    font-size: 12px;
+  }
+}
