@@ -135,16 +135,16 @@ function changePrice() {
   chartPrice.forEach((item, index) => {
     switch (index) {
       case 0:
-        item.textContent = backblazePrice();
+        item.textContent = backblazePrice() + " $";
         break;
       case 1:
-        item.textContent = bunnyPrice();
+        item.textContent = bunnyPrice() + " $";
         break;
       case 2:
-        item.textContent = scalewayPrice();
+        item.textContent = scalewayPrice() + " $";
         break;
       case 3:
-        item.textContent = vultrPrice();
+        item.textContent = vultrPrice() + " $";
         break;
       default:
         break;
