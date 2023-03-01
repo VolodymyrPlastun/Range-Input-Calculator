@@ -106,7 +106,8 @@ function scalewayPrice() {
     finalPrice = ((transferInput.value - 75) * transfer).toFixed(2);
   } else if (transferInput.value < 75) {
     finalPrice = (
-      (storageInput.value - 75) * multi.checked ? storage.multi : storage.single
+      (storageInput.value - 75) *
+      (multi.checked ? storage.multi : storage.single)
     ).toFixed(2);
   } else {
     finalPrice = price;
